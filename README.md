@@ -1,1 +1,0 @@
-# scandi-folktales.github.io
