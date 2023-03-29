@@ -1,0 +1,296 @@
+*{margin:0;padding:0;}
+
+/* Global */
+:root{
+    --HaysBlack: #131B1E;
+    --HaysGrey: #343E47;
+    --HaysBlue: #0477bf;
+    --HaysSilver: #E0ECF7;
+    --HaysWhite: #FFF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --HaysBlack: #FFF;
+    --HaysGrey: #E0ECF7;
+    --HaysBlue: #0477bf;
+    --HaysSilver: #343E47;
+    --HaysWhite: #131B1E;
+  }
+}
+
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
+
+.height-responsive{
+    height: 100%;
+    width: auto;
+}
+
+body{
+    background: url('img/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--HaysBlack);
+}
+
+.content{
+    background: var(--HaysSilver);
+    margin: 270px auto 50px auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.avatarCont{
+    padding: 30px;
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+    top: -220px;
+    background: var(--HaysSilver);
+    border-radius: 50%;
+    margin-bottom: -220px;
+}
+
+.avatar{
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.name{
+    display: grid;
+    place-items: center center;
+}
+
+.socials{
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.socials a{
+    color: #fff;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.12), 0 5px 5px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 2em;
+    display: grid;
+    float: left;
+    place-items: center center;
+    height: 2em;
+    width: 2em;
+    text-decoration: none !important;
+    margin: 5px;
+}
+
+.embeds a {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    display: block;
+    margin: 15px auto;
+    width: 100%;
+    background: var(--HaysBlue);
+    color: #fff !important;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+.socials a:hover, .embeds a:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.embeds a:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.embeds a:active {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.youtube{
+    background: #c4302b!important;
+}
+
+.twitch{
+    background: #6441a5!important;
+}
+
+.tiktok{
+    background: #000!important;
+    box-shadow: inset 5px 5px 0px 5px #25F4EE, inset -5px -5px 0px 5px #FE2C55, 0 5px 5px rgba(0,0,0,0.12), 0 5px 5px rgba(0,0,0,0.24)!important;
+}
+.tiktok:hover,.tiktok:active{
+    background: #000!important;
+    box-shadow: inset 5px 5px 0px 5px #25F4EE, inset -5px -5px 0px 5px #FE2C55, 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)!important;
+}
+
+.discord{
+    background: #5869ea!important;
+}
+
+.reddit{
+    background: #ff4500!important;
+}
+
+.twitter{
+    background: #00acee!important;
+}
+
+.instagram{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+
+.thingiverse{
+    background: #248bfb!important;
+}
+
+.printables{
+    background: #fb6832!important;
+}
+
+.imgIcon img{
+    height: 1em;
+}
+
+.footer{
+    height: 75px;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.HaysLogo{
+    height: 50px;
+}
+
+.VideoBox {
+    position: relative;
+    padding-bottom: calc(56.25% + 15px); /* 16:9 */
+    height: 0;
+}
+
+.Video{
+    position: absolute;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    margin: -15px -15px 0 -15px;
+    display: block;
+    border: none;
+    padding-bottom: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.customIcon{
+    display: inline;
+    height: 16px;
+    width: 16px;
+}
+
+/* Mobile configs */
+@media (max-width: 1200px){
+    .content{
+        margin-top: 235px
+    }
+
+    .avatarCont{
+        top: -185px;
+        margin-bottom: -185px;
+    }
+}
+
+@media (max-width: 992px){
+    .content{
+        margin-top: 255px
+    }
+
+    .avatarCont{
+        width: 60%;
+        top: -205px;
+        margin-bottom: -205px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content{
+        width: 90%;
+        margin-top: 200px
+    }
+
+    .avatarCont{
+        top: -150px;
+        margin-bottom: -150px;
+    }
+
+    .name{
+        text-align: center;
+        place-items: center;
+    }
+}
+
+@media (max-width: 576px){
+    .avatarCont{
+        padding: 20px;
+        width: 270px;
+    }
+}
+
+@media (max-width: 355px){
+    .avatarCont{
+        padding: 15px;
+        width: 190px;
+        top: -95px;
+        margin-bottom: -100px;
+    }
+
+    .content{
+        margin-top: 165px;
+    }
+}
+
+
+/* MAD-RIPPLE EFFECT */
+.ripple{
+  position: absolute;
+  top:0; left:0; bottom:0; right:0;
+  overflow: hidden;
+  -webkit-transform: translateZ(0); /* to contain zoomed ripple */
+  transform: translateZ(0);
+  border-radius: inherit; /* inherit from parent (rounded buttons etc) */
+  pointer-events: none; /* allow user interaction */
+          animation: ripple-shadow 0.4s forwards;
+  -webkit-animation: ripple-shadow 0.4s forwards;
+}
+.rippleWave{
+  backface-visibility: hidden;
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0.7); -webkit-transform: scale(0.7);
+  background: rgba(255,255,255, 1);
+  opacity: 0.45;
+          animation: ripple 1s forwards;
+  -webkit-animation: ripple 1s forwards;
+}
+@keyframes ripple-shadow {
+  0%   {box-shadow: 0 0 0 rgba(0,0,0,0.0);}
+  20%  {box-shadow: 0 4px 16px rgba(0,0,0,0.3);}
+  100% {box-shadow: 0 0 0 rgba(0,0,0,0.0);}
+}
+@-webkit-keyframes ripple-shadow {
+  0%   {box-shadow: 0 0 0 rgba(0,0,0,0.0);}
+  20%  {box-shadow: 0 4px 16px rgba(0,0,0,0.3);}
+  100% {box-shadow: 0 0 0 rgba(0,0,0,0.0);}
+}
+@keyframes ripple {
+  to {transform: scale(24); opacity:0;}
+}
+@-webkit-keyframes ripple {
+  to {-webkit-transform: scale(24); opacity:0;}
+}
